@@ -16,7 +16,8 @@ fun main(args: Array<String>) {
     val s1 = "a is $a" // $를 함으로써 글자가 아닌 변수라는 것을 의미
     val s2 = "a is ${a+2}" // {}안에 있는 a를 변수로 인식하여 1+2는 3인 결과가 나온다
     val s3 = "\" escape \", i have \$5" // 파이썬과 비슷하게 escape가 존재하며 \이다. 큰 따움표나 $같은 문자 아ㅠ에 \을 써서 사용할 수 있다.
-
+    val ab : Int =1
+    val ba : Double = ab.toDouble() // 코틀린은 오류를 방지하기위해 자동 자료형 변환이 안된다. int 값을 double에 입력하기 위해허는 형 변환이 필요하다.
     println(a)
     println(b)
     println(c)
@@ -28,4 +29,5 @@ fun main(args: Array<String>) {
     println(s1)
     println(s2)
     println(s3)
+    print(ba)
 }
